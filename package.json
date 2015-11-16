@@ -1,6 +1,6 @@
 {
   "name": "ember-creditcard",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Client side credit card type detection and validation for Ember.js apps",
   "directories": {
     "doc": "doc",
@@ -30,9 +30,11 @@
     "ember-cli-release": "0.2.3",
     "ember-cli-sri": "^1.0.3",
     "ember-cli-uglify": "^1.2.0",
+    "ember-code-snippet": "^1.1.1",
+    "ember-disable-prototype-extensions": "^1.0.0",
     "ember-disable-proxy-controllers": "^1.0.0",
     "ember-export-application-global": "^1.0.3",
-    "ember-disable-prototype-extensions": "^1.0.0",
+    "ember-suave": "1.2.2",
     "ember-try": "0.0.6"
   },
   "keywords": [

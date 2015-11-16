@@ -1,3 +1,43 @@
 * {
   font-family: 'Helvetica Neue' Helvetica Sans-Serif;
 }
+
+pre *, .code * {
+  font-family: monospace;
+  white-space: pre;
+  /*padding: 1em;*/
+  margin: .5em 0;
+  overflow: auto;
+}
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+  background: #f5f2f0;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+  padding: .1em;
+  border-radius: .3em;
+}
+
+.logo {
+  position: relative;
+  top: 20px;
+  height: 50px;
+  display: inline-block;
+  min-width: 73px;
+  background-repeat: no-repeat;
+}
+.logo.visa {
+  background-image: url('/img/visa.png');
+}
+.logo.mastercard {
+  background-image: url('/img/mastercard.png');
+}
+.logo.discover {
+  background-image: url('/img/discover.png');
+}
+.logo.amex {
+  background-image: url('/img/amex.png');
+}

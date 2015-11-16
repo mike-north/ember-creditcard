@@ -5,6 +5,27 @@
 
 This README outlines the details of collaborating on this Ember addon.
 
+## Usage
+
+Credit card type
+
+```hbs
+<span class="logo {{cc-number-to-type ccNumber allowedTypes='visa|mastercard|amex|discover'}}"></span>
+
+```
+
+Credit card validity
+
+```hbs
+
+{{#if (cc-luhn ccNumber)}}
+This card is valid
+{{else}}
+This card is invalid
+{{/if}}
+
+```
+
 ## Setup
 
 **Install this addon with ember-cli** `ember install ember-creditcard`
