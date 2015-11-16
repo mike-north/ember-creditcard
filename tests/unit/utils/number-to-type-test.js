@@ -1,9 +1,9 @@
-import numberToType from '../../../utils/number-to-type';
-import { module, test } from 'qunit';
+// import numberToType from '../../../utils/number-to-type';
+// import { module, test } from 'qunit';
 
-module('Unit | Utility | number to type');
+// module('Unit | Utility | number to type');
 
-// Replace this with your real tests.
-test('it works', function(assert) {
-  assert.equal(numberToType('4'), 'visa', 'Visa detected');
-});
+// // Replace this with your real tests.
+// test('it works', function(assert) {
+//   assert.equal(numberToType('4' , { allowedTypes: 'visa' }), 'visa', 'Visa detected');
+// });
