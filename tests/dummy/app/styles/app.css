@@ -30,14 +30,14 @@ pre[class*="language-"] {
   background-repeat: no-repeat;
 }
 .logo.visa {
-  background-image: url('/img/visa.png');
+  background-image: url('/ember-creditcard/img/visa.png');
 }
 .logo.mastercard {
-  background-image: url('/img/mastercard.png');
+  background-image: url('/ember-creditcard/img/mastercard.png');
 }
 .logo.discover {
-  background-image: url('/img/discover.png');
+  background-image: url('/ember-creditcard/img/discover.png');
 }
 .logo.amex {
-  background-image: url('/img/amex.png');
+  background-image: url('/ember-creditcard/img/amex.png');
 }
