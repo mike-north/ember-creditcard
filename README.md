@@ -1,7 +1,7 @@
 # ember-creditcard
 
-[![Build Status](https://travis-ci.org/Levanto-Financial/ember-creditcard.svg?branch=master)](https://travis-ci.org/Levanto-Financial/ember-creditcard)
-[![Code Climate](https://codeclimate.com/github/Levanto-Financial/ember-creditcard/badges/gpa.svg)](https://codeclimate.com/github/Levanto-Financial/ember-creditcard)
+[![Build Status](https://travis-ci.org/levanto-financial/ember-creditcard.svg?branch=master)](https://travis-ci.org/levanto-financial/ember-creditcard)
+[![Code Climate](https://codeclimate.com/github/levanto-financial/ember-creditcard/badges/gpa.svg)](https://codeclimate.com/github/levanto-financial/ember-creditcard)
 [![Dependency Status](https://david-dm.org/levanto-financial/ember-creditcard.svg)](https://david-dm.org/levanto-financial/ember-creditcard)
 [![devDependency Status](https://david-dm.org/levanto-financial/ember-creditcard/dev-status.svg)](https://david-dm.org/levanto-financial/ember-creditcard#info=devDependencies)
 [![Ember Observer Score](http://emberobserver.com/badges/ember-creditcard.svg)](http://emberobserver.com/addons/ember-creditcard)
