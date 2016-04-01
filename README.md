@@ -34,6 +34,7 @@ This card is invalid
 
 **Install this addon with ember-cli** `ember install ember-creditcard`
 
+**this addon is compatible with ember-cli-fastboot!**
 
 ## Installation
 
