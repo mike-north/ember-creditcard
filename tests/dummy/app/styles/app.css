@@ -31,13 +31,19 @@ pre[class*="language-"] {
 }
 .logo.visa {
   background-image: url('/ember-creditcard/img/visa.png');
+  background: url('/img/visa.png');
+
 }
 .logo.mastercard {
   background-image: url('/ember-creditcard/img/mastercard.png');
+  background: url('/img/mastercard.png');
+
 }
 .logo.discover {
   background-image: url('/ember-creditcard/img/discover.png');
+  background: url('/img/discover.png');
 }
 .logo.amex {
   background-image: url('/ember-creditcard/img/amex.png');
+  background: url('/img/amex.png');
 }

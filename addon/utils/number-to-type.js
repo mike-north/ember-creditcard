@@ -1,5 +1,5 @@
 export function ccNumberToType(params, hash) {
-  const [num] = params;
+  let [num] = params;
   let result = null;
   switch (true) {
     case /^3[47]/.test(num):
@@ -44,8 +44,8 @@ export function ccNumberToType(params, hash) {
     default:
       return [];
   }
-  const allowedTypes = (hash || {}).allowedTypes || '';
-  const allowedTypesArr = allowedTypes ? allowedTypes.split('|') : [];
+  let allowedTypes = (hash || {}).allowedTypes || '';
+  let allowedTypesArr = allowedTypes ? allowedTypes.split('|') : [];
   if (allowedTypesArr.length > 0) {
     result = result.filter((typ) => allowedTypesArr.indexOf(typ) >= 0);
   }
