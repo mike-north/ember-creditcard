@@ -1,6 +1,8 @@
 import Ember from 'ember';
 import luhn from '../utils/luhn';
 
+const { Helper } = Ember;
+
 export function ccLuhn(params /*, hash*/) {
   let ccStr = params[0] || '';
 
@@ -12,4 +14,4 @@ export function ccLuhn(params /*, hash*/) {
   return luhn(ccStr);
 }
 
-export default Ember.Helper.helper(ccLuhn);
+export default Helper.helper(ccLuhn);
