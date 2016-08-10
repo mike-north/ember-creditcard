@@ -1,42 +1,38 @@
 language: node_js
 node_js:
-- iojs
+  - "4"
+
 sudo: false
+
 cache:
   directories:
-  - node_modules
+    - node_modules
+
 env:
-- EMBER_TRY_SCENARIO=ember-1.13
-- EMBER_TRY_SCENARIO=ember-release
-- EMBER_TRY_SCENARIO=ember-beta
-- EMBER_TRY_SCENARIO=ember-canary
+  - EMBER_TRY_SCENARIO=ember-1.13
+  - EMBER_TRY_SCENARIO=ember-release
+  - EMBER_TRY_SCENARIO=ember-beta
+  - EMBER_TRY_SCENARIO=ember-canary
+
 matrix:
   fast_finish: true
   allow_failures:
-  - env: EMBER_TRY_SCENARIO=ember-canary
+    - env: EMBER_TRY_SCENARIO=ember-canary
+
 before_install:
-- mkdir travis-phantomjs
-- wget https://s3.amazonaws.com/travis-phantomjs/phantomjs-2.0.0-ubuntu-12.04.tar.bz2
-  -O $PWD/travis-phantomjs/phantomjs-2.0.0-ubuntu-12.04.tar.bz2
-- tar -xvf $PWD/travis-phantomjs/phantomjs-2.0.0-ubuntu-12.04.tar.bz2 -C $PWD/travis-phantomjs
-- export PATH=$PWD/travis-phantomjs:$PATH
-- npm config set spin false
-- npm install -g npm@^2
+  - npm config set spin false
+  - npm install -g bower
+  - bower --version
+  - npm install phantomjs-prebuilt
+  - phantomjs --version
+
 install:
-- npm install -g bower
-- npm install
-- bower install
+  - npm install
+  - bower install
+
 script:
-- ember try $EMBER_TRY_SCENARIO test
-after_success:
-- rm -rf travis-phantomjs
-- git remote add deploy https://$GH_TOKEN:x-oauth-basic@github.com/Levanto-Financial/ember-creditcard.git
-- git fetch deploy
-- git branch gh-pages deploy/gh-pages
-- git config user.name Mike North
-- git config user.email michael.l.north@gmail.com
-- "/bin/bash lib/try-generate-pages.sh"
-- git checkout master
+  - ember try:one $EMBER_TRY_SCENARIO test --skip-cleanup
+
 notifications:
   slack:
     secure: eiDKk8w30/Rexkil0h2Wup/cWi6bMJwYqCs5K7STE5F9O5ggzvNNsHx9j4bBCXMWjqhyBGGeYRwgNzo9pNr0PSh3zX0hNCJL1UtKduvEscy+bMGgvVtAMqTvzM9He+Nhnmx8fnRpGj5setUJl58JRqx/NuZtRn7UPA6E5hrJKoH4+Ru7TV8Fqf6Ehkto4HPaAMf2cjSRTaA532jaga43DrWcbXSqDvfzfsv4qHZOqT/hArF5Co1/KYAPRSthvZ52CHqFk0VMjs1waUkT5VQzW0dLIeiO6lUed8VPEpZbX0X8VfLmNEECF+V39Y21KZ9h4BKNxRRmF/rDqCDEoNePM6kvG11cSPOabGsw1AT/VcIYfn2UE79P/VwPt4I2DdGuicb+RDYTZy1xN3Mi+ZWEIHlTOXLjabUBVQK18SALKQcrB6+8+f4RbbJ618c3i+PE3oJE/IJADgyclihmEN9SjA5m1PJ/dodHIdMGZMGrlAXb2AcQUthIehCskXngvwYWNt9V6Hw3UyDbBwkPVIXEl8rtsgLap3zcjpk5PLWiT6SLHG7JagVjyiWoDa7hvtsfNqfzWMIzLJbdCHqIzIvaTT/ePy3mUeA7sgpiI+H/Bk6sM4jwiI7qNEL01dUcMHTC168PxsgrLjyCHJdajfybJ2DP3dUH/F03Aq+Rzcnm/Io=
