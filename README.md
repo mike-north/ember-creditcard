@@ -1,5 +1,7 @@
 # ember-creditcard
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/mike-north/ember-creditcard.svg)](https://greenkeeper.io/)
+
 [![Build Status](https://travis-ci.org/mike-north/ember-creditcard.svg?branch=master)](https://travis-ci.org/mike-north/ember-creditcard)
 [![Code Climate](https://codeclimate.com/github/mike-north/ember-creditcard/badges/gpa.svg)](https://codeclimate.com/github/mike-north/ember-creditcard)
 [![Dependency Status](https://david-dm.org/mike-north/ember-creditcard.svg)](https://david-dm.org/mike-north/ember-creditcard)
