@@ -9,41 +9,43 @@
   "scripts": {
     "build": "ember build",
     "start": "ember server",
-    "test": "ember try:testall"
+    "test": "ember try:each"
   },
   "repository": "https://github.com/mike-north/ember-creditcard",
   "engines": {
-    "node": ">= 0.10.0"
+    "node": ">= 4"
   },
   "author": "Mike North <michael.l.north@gmail.com> (http://mike.works)",
   "license": "MIT",
   "devDependencies": {
-    "broccoli-asset-rev": "^2.4.2",
+    "broccoli-asset-rev": "^2.4.5",
     "ember-cli": "2.13.2",
     "ember-cli-changelog": "0.3.4",
     "ember-cli-dependency-checker": "^2.0.0",
+    "ember-cli-eslint": "^3.1.0",
     "ember-cli-htmlbars-inline-precompile": "^0.4.3",
-    "ember-cli-inject-live-reload": "^1.4.0",
-    "ember-cli-jshint": "^2.0.1",
+    "ember-cli-inject-live-reload": "^1.4.1",
     "ember-cli-qunit": "^4.0.0",
     "ember-cli-release": "1.0.0-beta.2",
-    "ember-cli-test-loader": "^2.1.0",
+    "ember-cli-shims": "^1.1.0",
     "ember-cli-uglify": "^1.2.0",
     "ember-code-snippet": "^1.1.1",
     "ember-disable-prototype-extensions": "^1.1.0",
     "ember-export-application-global": "^2.0.0",
     "ember-load-initializers": "^1.0.0",
     "ember-resolver": "^4.1.0",
-    "ember-suave": "^4.0.0",
     "ember-sublime": "0.0.9",
-    "loader.js": "^4.0.7"
+    "ember-source": "~2.13.0",
+    "eslint-plugin-ember-suave": "^1.0.0",
+    "loader.js": "^4.2.3"
   },
   "keywords": [
-    "ember-addon"
+    "ember-addon",
+    "creditcard"
   ],
   "dependencies": {
-    "ember-cli-htmlbars": "^2.0.1",
-    "ember-cli-babel": "^6.1.0"
+    "ember-cli-babel": "^6.0.0",
+    "ember-cli-htmlbars": "^2.0.1"
   },
   "ember-addon": {
     "configPath": "tests/dummy/config",

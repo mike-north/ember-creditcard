@@ -5,7 +5,7 @@ const { Helper } = Ember;
 
 export let ccNumberToType = numToType;
 
-export default Helper.helper(function(/*params, hash*/) {
+export default Helper.helper(function(/* params, hash*/) {
   let result = numToType(...arguments);
   return result[0] || '';
 });
