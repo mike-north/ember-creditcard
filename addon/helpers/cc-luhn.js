@@ -3,7 +3,7 @@ import luhn from '../utils/luhn';
 
 const { Helper } = Ember;
 
-export function ccLuhn(params /*, hash*/) {
+export function ccLuhn(params /* , hash*/) {
   let ccStr = params[0] || '';
 
   let arr = [];
