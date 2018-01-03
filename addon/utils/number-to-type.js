@@ -47,7 +47,7 @@ export function ccNumberToType(params, hash) {
   let allowedTypes = (hash || {}).allowedTypes || '';
   let allowedTypesArr = allowedTypes ? allowedTypes.split('|') : [];
   if (allowedTypesArr.length > 0) {
-    result = result.filter((typ) => allowedTypesArr.indexOf(typ) >= 0);
+    result = result.filter(typ => allowedTypesArr.indexOf(typ) >= 0);
   }
   return result;
 }

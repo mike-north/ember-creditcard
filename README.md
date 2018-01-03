@@ -59,4 +59,4 @@ This card is invalid
 
 For more information on using ember-cli, visit [http://www.ember-cli.com/](http://www.ember-cli.com/).
 
-Copyright (c) 2015 Levanto Financial
+Copyright (c) 2015 Levanto Financial, 2016-18 [Mike Works, Inc.](https://mike.works), All Rights Reserved
