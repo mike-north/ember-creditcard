@@ -1,7 +1,5 @@
-import Ember from 'ember';
+import Helper from '@ember/component/helper';
 import luhn from '../utils/luhn';
-
-const { Helper } = Ember;
 
 export function ccLuhn(params /* , hash*/) {
   let ccStr = params[0] || '';

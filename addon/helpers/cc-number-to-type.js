@@ -1,7 +1,5 @@
-import Ember from 'ember';
+import Helper from '@ember/component/helper';
 import numToType from '../utils/number-to-type';
-
-const { Helper } = Ember;
 
 export let ccNumberToType = numToType;
 

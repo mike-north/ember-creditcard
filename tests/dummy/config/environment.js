@@ -1,15 +1,19 @@
-/* jshint node: true */
+'use strict';
 
 module.exports = function(environment) {
-  var ENV = {
+  let ENV = {
     modulePrefix: 'dummy',
-    environment: environment,
+    environment,
     rootURL: '/',
     locationType: 'auto',
     EmberENV: {
       FEATURES: {
         // Here you can enable experimental features on an ember canary build
         // e.g. 'with-controller': true
+      },
+      EXTEND_PROTOTYPES: {
+        // Prevent Ember Data from overriding Date.parse.
+        Date: false
       }
     },
     contentSecurityPolicy: {
@@ -19,22 +23,18 @@ module.exports = function(environment) {
         'https://nexus-websocket-a.intercom.io',
         'https://nexus-websocket-b.intercom.io',
         'wss://nexus-websocket-a.intercom.io',
-        'wss://nexus-websocket-b.intercom.io'].join(' '),
+        'wss://nexus-websocket-b.intercom.io'
+      ].join(' '),
       'img-src': [
         'data:',
         'http://localhost:4200',
         'https://static.intercomcdn.com',
-        'https://js.intercomcdn.com'].join(' '),
+        'https://js.intercomcdn.com'
+      ].join(' '),
       'default-src': 'http://localhost:4200',
-      'script-src': [
-        'http://localhost:4200',
-        'https://widget.intercom.io',
-        'https://js.intercomcdn.com'].join(' '),
-      'media-src': [
-        'https://js.intercomcdn.com'].join(' '),
-      'style-src': [
-        'http://localhost:4200',
-        '\'unsafe-inline\''].join(' ')
+      'script-src': ['http://localhost:4200', 'https://widget.intercom.io', 'https://js.intercomcdn.com'].join(' '),
+      'media-src': ['https://js.intercomcdn.com'].join(' '),
+      'style-src': ['http://localhost:4200', "'unsafe-inline'"].join(' ')
     },
     intercom: {
       appId: ''
@@ -62,10 +62,11 @@ module.exports = function(environment) {
     ENV.APP.LOG_VIEW_LOOKUPS = false;
 
     ENV.APP.rootElement = '#ember-testing';
+    ENV.APP.autoboot = false;
   }
 
   if (environment === 'production') {
-
+    // production options here
   }
 
   return ENV;
