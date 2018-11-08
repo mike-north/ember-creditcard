@@ -1,9 +1,14 @@
 {{input type="number" value=ccNumber}}
-<br/>
+
+<br>
+
 Type is:
 
-<!-- LOGO -->
-<span class="logo {{cc-number-to-type ccNumber allowedTypes='visa|mastercard|amex|discover'}}"></span>
+{{! LOGO }}
+<span
+  class="logo {{cc-number-to-type ccNumber allowedTypes="visa|mastercard|amex|discover"}}"
+>
+</span>
 
-<!-- TEXT -->
-{{cc-number-to-type ccNumber allowedTypes='visa|mastercard|amex|discover'}}
+{{! TEXT }}
+{{cc-number-to-type ccNumber allowedTypes="visa|mastercard|amex|discover"}}
