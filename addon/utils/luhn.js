@@ -12,6 +12,7 @@ const luhnChk = (function(arr) {
 
     while (len) {
       val = parseInt(ccNum.charAt(--len), 10);
+      // eslint-disable-next-line
       sum += (bit ^= 1) ? arr[val] : val;
     }
 
