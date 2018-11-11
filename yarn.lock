@@ -4139,7 +4139,7 @@ ember-cli-dependency-checker@3.0.0:
     resolve "^1.5.0"
     semver "^5.3.0"
 
-ember-cli-eslint@^5.0.0:
+ember-cli-eslint@5.0.0:
   version "5.0.0"
   resolved "https://registry.yarnpkg.com/ember-cli-eslint/-/ember-cli-eslint-5.0.0.tgz#6a3b07c30604035093f3ac8dac043197cda42873"
   integrity sha512-vKZEICBVvnVx6rNiT6cZHiIyFfNitA7RoZ4476aDNPs/vk5YEVJPnp55B2qYFjg8G7Xqp7K7xRfJFgVp6HcPdA==
