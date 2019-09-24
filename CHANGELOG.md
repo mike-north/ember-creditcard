@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/mike-north/ember-creditcard/compare/v1.0.0...v1.0.1) (2019-09-24)
+
+
+### Bug Fixes
+
+* **deps:** stable ember infrastructure ([9b4dae4](https://github.com/mike-north/ember-creditcard/commit/9b4dae4))
+
 # 1.0.0 (2018-11-11)
 
 
