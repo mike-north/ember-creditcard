@@ -35,7 +35,7 @@
     "ember-load-initializers": "2.1.2",
     "ember-maybe-import-regenerator": "0.1.6",
     "ember-qunit": "7.0.0",
-    "ember-resolver": "10.1.1",
+    "ember-resolver": "11.0.1",
     "ember-source": "5.1.0",
     "ember-source-channel-url": "1.2.0",
     "ember-try": "1.4.0",
@@ -57,7 +57,7 @@
     "test": "tests"
   },
   "dependencies": {
-    "ember-cli-babel": "^7.0.0",
+    "ember-cli-babel": "^8.0.0",
     "ember-cli-htmlbars": "^6.0.0"
   },
   "ember-addon": {
