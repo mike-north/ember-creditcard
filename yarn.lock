@@ -5965,10 +5965,10 @@ ember-maybe-import-regenerator@0.1.6:
     ember-cli-babel "^6.0.0-beta.4"
     regenerator-runtime "^0.9.5"
 
-ember-qunit@9.0.0:
-  version "9.0.0"
-  resolved "https://registry.yarnpkg.com/ember-qunit/-/ember-qunit-9.0.0.tgz#e53a42112b336c29ee6655a279c5b6671478b9cb"
-  integrity sha512-3yAi6n8HfzMVo/HdzIvf2htXyE5HAeh4R/mriWqMeTrWEvwfELr1xnjYlDztvzbLzTphg5KwAk0U/EtTy4q0Ng==
+ember-qunit@9.0.1:
+  version "9.0.1"
+  resolved "https://registry.yarnpkg.com/ember-qunit/-/ember-qunit-9.0.1.tgz#3ca2c8d7e43ec67e6ef0c554573c2a7cfb352ddc"
+  integrity sha512-9DgjczFG7ZjINmwWFYDtUF8McbYqQir82hyFp/ZbMOLkpFvHCKPw1mtKcpcdLnLAAYJpwR2/MCyPNiEMkR11aA==
   dependencies:
     "@embroider/addon-shim" "^1.8.6"
     "@embroider/macros" "^1.13.1"
